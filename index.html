@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Biscoito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="botao-abrir">Mostrar Popup</button>
+    </div>
+    <div class="cookie-box">
+        <span class="botao-fechar">&times;</span>
+        <img src="1548612994.png" alt="">
+        <h3>cookies and privacy</h3>
+        <p>Este site utiliza cookies para garantir a você a melhor experiência em nosso site</p>
+        <a href="#" class="aceitar">Aceitar todos cookies</a>
+        <a href="#" class="configuracoes">customizar configurações</a>
+    </div>
+    <script>
+        document.querySelector('.botao-abrir').onclick = () => {
+            document.querySelector('.cookie-box').classList.add('active');
+        }
+        document.querySelector('.botao-fechar').onclick = () => {
+            document.querySelector('.cookie-box').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
